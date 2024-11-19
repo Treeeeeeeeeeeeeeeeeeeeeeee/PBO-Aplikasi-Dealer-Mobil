@@ -1,11 +1,13 @@
 package GusDealer;
 
+import Penjualan.Transaksi;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Dealer {
-    private String nama;
+    final String nama;
     protected StokMobil stokMobil;
     private List<Transaksi> daftarTransaksi;
 
@@ -25,7 +27,7 @@ public class Dealer {
         System.out.println("Daftar Transaksi:");
         for (Transaksi transaksi : daftarTransaksi) {
             transaksi.infoTransaksi();
-            System.out.println("-------------------");
+            System.out.println("-".repeat(20));
         }
     }
 }

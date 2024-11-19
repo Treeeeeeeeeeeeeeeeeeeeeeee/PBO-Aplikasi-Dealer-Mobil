@@ -1,4 +1,6 @@
-package GusDealer;
+package Penjualan;
+
+import GusDealer.Mobil;
 
 import java.util.Date;
 
@@ -7,14 +9,34 @@ public class Transaksi {
     private Mobil mobil;
     private String pembeli;
     private Date tanggalTransaksi;
-    private int hargaJual;
+    private double hargaJual;
 
-    public Transaksi(String idTransaksi, Mobil mobil, String pembeli, Date tanggalTransaksi, int hargaJual) {
+    public Transaksi(String idTransaksi, Mobil mobil, String pembeli, Date tanggalTransaksi, double hargaJual) {
         this.idTransaksi = idTransaksi;
         this.mobil = mobil;
         this.pembeli = pembeli;
         this.tanggalTransaksi = tanggalTransaksi;
         this.hargaJual = hargaJual;
+    }
+
+    public String getIdTransaksi() {
+        return idTransaksi;
+    }
+
+    public Mobil getMobil() {
+        return mobil;
+    }
+
+    public String getPembeli() {
+        return pembeli;
+    }
+
+    public Date getTanggalTransaksi() {
+        return tanggalTransaksi;
+    }
+
+    public double getHargaJual() {
+        return hargaJual;
     }
 
     public void infoTransaksi() {
